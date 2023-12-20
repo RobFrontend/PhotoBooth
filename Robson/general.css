@@ -151,7 +151,7 @@ body {
 
 /* COOKIES */
 
-/* .cookie-banner {
+.cookie-banner {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -170,4 +170,4 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-} */
+}
