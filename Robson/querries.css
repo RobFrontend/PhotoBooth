@@ -74,7 +74,7 @@
     padding: 0 6.4rem;
   }
   .logo {
-    background-size: 50%;
+    background-size: 70%;
   }
   .img-features {
     width: 7rem;
@@ -110,6 +110,10 @@
   }
 
   /* Mobile */
+
+  .nav-link {
+    font-size: 3.2rem;
+  }
 
   .btn-mobile-nav {
     display: block;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Wesela, urodziny, chrzciny - każda okazja dobra żeby w oryginalny sposób uwiecznić tą ważną w życiu chwilę a dzięki naszej fotobudce będziesz miał niezapomniane video z najważniejszego dla Ciebie momentu Impreza firmowa, grill z przyjaciółmi, bal, targi, pokazy, eventy to czas który również warto zapisać nie tylko w swojej głowie ale także jako video, którym będzie można się pochwalić oraz reklamować - skorzystaj z naszej Zakręconej Fotobudki360 a świat zobaczy Cię w nowej odsłonie, firma zyska klientów, rodzina i przyjaciele wspaniałą pamiątkę a pokaz który zorganizujesz zyska mocno na atrakcyjności. Już nie trzeba oczekiwać miesiącami na film - teraz masz imprezę w pigułce już podczas jej trwania. Zapraszamy do kontaktu i współpracy"
+      content="Wesela, urodziny, chrzciny - każda okazja dobra żeby w oryginalny sposób uwiecznić tą ważną w życiu chwilę a dzięki naszej fotobudce będziesz miał niezapomniane video z najważniejszego dla Ciebie momentu Impreza firmowa, grill z przyjaciółmi, bal, targi, pokazy, eventy to czas który również warto zapisać nie tylko w swojej głowie ale także jako video, którym będzie można się pochwalić oraz reklamować - skorzystaj z naszej Zakręconej Fotobudki360 a świat zobaczy Cię w nowej odsłonie, firma zyska klientów, rodzina i przyjaciele wspaniałą pamiątkę, a pokaz który zorganizujesz zyska mocno na atrakcyjności. Już nie trzeba oczekiwać miesiącami na film - teraz masz imprezę w pigułce już podczas jej trwania. Zapraszamy do kontaktu i współpracy"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,6 +31,16 @@
 
     <title>ROBSON Fotobudka360</title>
   </head>
+  <!-- Informacja o plikach cookies -->
+  <!-- <header>
+    <div class="cookie-banner">
+      <p>
+        Ta strona używa plików cookies, aby zapewnić najlepsze doświadczenie dla
+        użytkownika.
+      </p>
+      <button id="accept-cookies">Akceptuj</button>
+    </div>
+  </header> -->
   <body>
     <main>
       <section class="section-hero" id="hero">
@@ -191,11 +201,15 @@
           <div class="hero-photo">
             <div class="hero-photo-box">
               <p class="p-hero-hidden">ROBSON FOTOBUDKA360</p>
-              <img
-                src="img/booth-hero.webp"
-                class="hero-photo-img"
-                alt="Zdjęcie fotobudki 360 na tle chmur"
-              />
+              <picture>
+                <source srcset="img/booth-hero.webp" type="image/webp" />
+                <source srcset="img/booth-hero.png" type="image/png" />
+                <img
+                  src="img/booth-hero.png"
+                  class="hero-photo-img"
+                  alt="Zdjęcie fotobudki 360 na tle chmur"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -253,11 +267,15 @@
           <div class="onas-boxes">
             <div class="onas-box">
               <div class="onas-img-box">
-                <img
-                  class="onas-img"
-                  src="img/onas/mozliwosci.webp"
-                  alt="elektronika, sprzęt dj'a"
-                />
+                <picture>
+                  <source srcset="img/onas/mozliwosci.webp" type="image/webp" />
+                  <source srcset="img/onas/mozliwosci.png" type="image/png" />
+                  <img
+                    class="onas-img"
+                    src="img/onas/mozliwosci.png"
+                    alt="elektronika, sprzęt dj'a"
+                  />
+                </picture>
               </div>
               <div class="onas-text-box">
                 <h3 class="heading-tertiary heading-onas-boxes">Możliwości</h3>
@@ -271,11 +289,15 @@
 
             <div class="onas-box">
               <div class="onas-img-box">
-                <img
-                  class="onas-img"
-                  src="img/onas/dlakazdego.webp"
-                  alt="budynek z napisem kazdy ma swoja historie"
-                />
+                <picture>
+                  <source srcset="img/onas/dlakazdego.webp" type="image/webp" />
+                  <source srcset="img/onas/dlakazdego.png" type="image/png" />
+                  <img
+                    class="onas-img"
+                    src="img/onas/dlakazdego.png"
+                    alt="budynek z napisem kazdy ma swoja historie"
+                  />
+                </picture>
               </div>
               <div class="onas-text-box">
                 <h3 class="heading-tertiary heading-onas-boxes">Dla każdego</h3>
@@ -289,11 +311,18 @@
 
             <div class="onas-box sociale">
               <div class="onas-img-box">
-                <img
-                  class="onas-img"
-                  src="img/onas/socialmedia.webp"
-                  alt="fotografia social mediów"
-                />
+                <picture>
+                  <source
+                    srcset="img/onas/socialmedia.webp"
+                    type="image/webp"
+                  />
+                  <source srcset="img/onas/socialmedia.png" type="image/png" />
+                  <img
+                    class="onas-img"
+                    src="img/onas/socialmedia.png"
+                    alt="fotografia social mediów"
+                  />
+                </picture>
               </div>
               <div class="onas-text-box">
                 <h3 class="heading-tertiary heading-onas-boxes">
@@ -331,39 +360,59 @@
 
           <div class="eventy-img-boxes">
             <div class="eventy-img-box work">
-              <img
-                class="eventy-img"
-                src="img/eventy/work.webp"
-                alt="szkolenia, praca"
-              />
+              <picture>
+                <source srcset="img/eventy/work.webp" type="image/webp" />
+                <source srcset="img/eventy/work.png" type="image/png" />
+                <img
+                  class="eventy-img"
+                  src="img/eventy/work.png"
+                  alt="szkolenia, praca"
+                />
+              </picture>
             </div>
             <div class="eventy-img-box uro">
-              <img
-                class="eventy-img"
-                src="img/eventy/birthday.webp"
-                alt="urodziny, imprezy"
-              />
+              <picture>
+                <source srcset="img/eventy/birthday.webp" type="image/webp" />
+                <source srcset="img/eventy/birthday.png" type="image/png" />
+                <img
+                  class="eventy-img"
+                  src="img/eventy/birthday.png"
+                  alt="urodziny, imprezy"
+                />
+              </picture>
             </div>
             <div class="eventy-img-box party">
-              <img
-                class="eventy-img"
-                src="img/eventy/firma.webp"
-                alt="eventy, panieńskie, kawalerskie, imprezy firmowe"
-              />
+              <picture>
+                <source srcset="img/eventy/firma.webp" type="image/webp" />
+                <source srcset="img/eventy/firma.png" type="image/png" />
+                <img
+                  class="eventy-img"
+                  src="img/eventy/firma.png"
+                  alt="eventy, panieńskie, kawalerskie, imprezy firmowe"
+                />
+              </picture>
             </div>
             <div class="eventy-img-box pokaz">
-              <img
-                class="eventy-img"
-                src="img/eventy/show.webp"
-                alt="pokazy i targi"
-              />
+              <picture>
+                <source srcset="img/eventy/show.webp" type="image/webp" />
+                <source srcset="img/eventy/show.png" type="image/png" />
+                <img
+                  class="eventy-img"
+                  src="img/eventy/show.png"
+                  alt="pokazy i targi"
+                />
+              </picture>
             </div>
             <div class="eventy-img-box wedd">
-              <img
-                class="eventy-img"
-                src="img/eventy/wedding.webp"
-                alt="ludzie na weselu"
-              />
+              <picture>
+                <source srcset="img/eventy/wedding.webp" type="image/webp" />
+                <source srcset="img/eventy/wedding.png" type="image/png" />
+                <img
+                  class="eventy-img"
+                  src="img/eventy/wedding.png"
+                  alt="ludzie na weselu"
+                />
+              </picture>
             </div>
           </div>
 
@@ -390,6 +439,17 @@
           <h2 class="heading-secondary heading-section">
             Opinie naszych klientów
           </h2>
+          <div class="reviews">
+            <script
+              src="https://static.elfsight.com/platform/platform.js"
+              data-use-service-core
+              defer
+            ></script>
+            <div
+              class="elfsight-app-41d3b1d9-0fc1-43dd-b0a7-096b567b68fa"
+              data-elfsight-app-lazy
+            ></div>
+          </div>
         </div>
       </section>
 

@@ -116,11 +116,9 @@ navLinks.forEach((navLinks) =>
 // Sticky NAV
 
 const headerHeight = navigation.getBoundingClientRect().height;
-console.log(headerHeight);
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
   if (!entry.isIntersecting) {
     navigation.classList.add("stickyNav");
   } else {
@@ -157,3 +155,28 @@ reveals.forEach(function (reveal) {
   revealObserver.observe(reveal);
   reveal.classList.add("section-hidden");
 });
+
+// // COOKIES
+// /////////////////////////////////////////////
+// document.addEventListener("DOMContentLoaded", function () {
+//   const cookieBanner = document.querySelector(".cookie-banner");
+//   const acceptCookiesButton = document.getElementById("accept-cookies");
+
+//   acceptCookiesButton.addEventListener("click", function () {
+//     // Ustawienie ciasteczka po zaakceptowaniu
+//     document.cookie =
+//       "cookies_accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+
+//     // Schowanie banera z informacją o cookies
+//     cookieBanner.style.display = "none";
+//   });
+
+//   // Sprawdzenie, czy ciasteczko zostało już zaakceptowane
+//   if (
+//     document.cookie
+//       .split(";")
+//       .some((cookie) => cookie.trim().startsWith("cookies_accepted="))
+//   ) {
+//     cookieBanner.style.display = "none";
+//   }
+// });
